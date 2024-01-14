@@ -29,8 +29,23 @@ const instructor = {
 
 // #4
 
-function makeAnimal(species, verb, noise) {
+function dog(species,verb) {
     return {
-        sp
+        species,
+        verb, 
+        noise() {
+            return 'woof!';
+        }
     }
 }
+
+function sheep(species,verb) {
+    return {
+        species,
+        verb,
+        noise() {
+            return 'baaahhh';
+        }
+    }
+}
+
